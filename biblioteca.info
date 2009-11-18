@@ -1,0 +1,20 @@
+name        = Biblioteca Theme
+description = Biblioteca Theme
+screenshot  = screenshot.png
+core        = 6.x
+version     = 6.x-0.1-dev
+engine = phptemplate
+
+stylesheets[all][]   = style.css
+stylesheets[all][]   = biblioteca.css
+stylesheets[print][] = print.css
+
+regions[left]			= left
+regions[content_left]   = content bottom left
+regions[content_right]  = content bottom right
+regions[footer]         = footer
+regions[closure_region] = closure
+
+features[] = logo
+features[] = name
+features[] = favicon
