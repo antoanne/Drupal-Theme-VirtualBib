@@ -74,6 +74,10 @@ body {
 	text-align:right;
 	padding:60px 40px 0 0;}
 
+#search .form-text, #search .form-submit {
+	border:1px solid black;
+}
+
 #main{	
 	float:left;
 	margin:-20px 0 0;
@@ -82,10 +86,16 @@ body {
 #sidebar-left {
 	border-right:none;
 	float:left;
-	background-color:green;
-	margin:-40px 0 0 10px;
+	background:none;
+	margin:-44px 0 0 0;
 	padding:0 10px;
 	color:#000;
+}
+
+#sidebar-left .block{
+	background:green;
+	padding:5px;
+	margin:5px 5px 10px 5px;
 }
 
 #sidebar-left h2, #sidebar-left a{
@@ -93,8 +103,8 @@ body {
 }
 
 #sidebar-left h2{
-	font-size:2em;
-	margin:3px 0px;
+	font-size:1.6em;
+	margin:0px 0px 3px 6px;
 }
 
 body.sidebar-left #footer {
@@ -110,3 +120,34 @@ body.sidebar-left #footer {
 a:link, a:hover, a:visited{
 	color:#00407E;
 }
+
+li.collapsed{
+	list-style-image:url(images/mais.gif);
+}
+
+li.expanded{
+	list-style-image:url(images/menos.gif);
+}
+
+li.leaf {
+	list-style-image:url(images/leaf.gif);
+}
+
+
+#menu-bibliotecas li{
+	list-style:none;
+	text-transform:uppercase;
+	padding:5px;
+	background:red;
+	margin:0px -4px 0 -16px;
+	font-size:1.2em;
+	border-bottom:1px solid white;
+}
+
+#menu-bibliotecas li.um    { background-color:#54A443; }
+#menu-bibliotecas li.dois  { background-color:#439441; }
+#menu-bibliotecas li.tres  { background-color:#2B863E; }
+#menu-bibliotecas li.quatro{ background-color:#13793B; }
+#menu-bibliotecas li.cinco { background-color:#086D37; }
+#menu-bibliotecas li.seis  { background-color:#076234; border-bottom:none; }
+
