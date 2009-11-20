@@ -107,6 +107,8 @@ body {
 	margin:0px 0px 3px 6px;
 }
 
+#sidebar-left { text-shadow: black 1px 1px; }
+
 body.sidebar-left #footer {
 	margin-left:0;
 	clear:both;
@@ -117,6 +119,7 @@ body.sidebar-left #footer {
 	margin-bottom:0px;
 }
 
+a { font-weight:normal; }
 a:link, a:hover, a:visited{
 	color:#00407E;
 }
@@ -142,6 +145,7 @@ li.leaf {
 	margin:0px -4px 0 -16px;
 	font-size:1.2em;
 	border-bottom:1px solid white;
+	text-shadow: black 1px 1px;
 }
 
 #menu-bibliotecas li.um    { background-color:#54A443; }
