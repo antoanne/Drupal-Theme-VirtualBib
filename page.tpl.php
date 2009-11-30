@@ -126,27 +126,25 @@
         </div> <!-- /#logo-title -->
       <?php endif; ?>
 
-      <?php if ($search_box): ?>
-        <div id="search-box">
-          <?php print $search_box; ?>
-        </div> <!-- /#search-box -->
-	        <?php endif; ?>
-
-
+	<?php if ($search_box): ?>
+		<div id="search-box">
+			<?php print $search_box; ?>
+		</div> <!-- /#search-box -->
+	<?php endif; ?>
 
     </div></div> <!-- /#header-inner, /#header -->
 
     <div id="main"><div id="main-inner" class="clear-block<?php if ($search_box || $primary_links || $secondary_links || $navbar) { print ' with-navbar'; } ?>">
 
-        <?php if ($mission): ?>
-          <div id="mission"><?php print $mission; ?></div>
-        <?php endif; ?>
+		<?php if ($mission): ?>
+			<div id="mission"><?php print $mission; ?></div>
+		<?php endif; ?>
 
-      <?php if ($left): ?>
-        <div id="sidebar-left"><div id="sidebar-left-inner" class="region region-left">
-          <?php print $left; ?>
-        </div></div> <!-- /#sidebar-left-inner, /#sidebar-left -->
-      <?php endif; ?>
+		<?php if ($left): ?>
+			<div id="sidebar-left"><div id="sidebar-left-inner" class="region region-left">
+				<?php print $left; ?>
+			</div></div> <!-- /#sidebar-left-inner, /#sidebar-left -->
+		<?php endif; ?>
 
       <div id="content"><div id="content-inner">
 	
@@ -174,9 +172,14 @@
           <?php print $content; ?>
         </div>
 
-        <?php if ($content_bottom): ?>
-          <div id="content-bottom" class="region region-content_bottom">
-            <?php print $content_bottom; ?>
+        <?php if ($content_bottom_left): ?>
+          <div id="content-bottom-left" class="region region-content_bottom_left">
+            <?php print $content_bottom_left; ?>
+          </div> <!-- /#content-bottom -->
+        <?php endif; ?>
+        <?php if ($content_bottom_right): ?>
+          <div id="content-bottom-right" class="region region-content_bottom_right">
+            <?php print $content_bottom_right; ?>
           </div> <!-- /#content-bottom -->
         <?php endif; ?>
 
@@ -208,9 +211,11 @@
       </div></div> <!-- /#footer-inner, /#footer -->
     <?php endif; ?>
 
+        <?php print $powered_by; ?>
 
-	
   </div></div> <!-- /#page-inner, /#page -->
+
+<?php print $closure; ?>
 
 </body>
 </html>

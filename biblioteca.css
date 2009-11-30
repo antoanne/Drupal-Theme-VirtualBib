@@ -31,6 +31,14 @@ body {
 	width:700px;
 }
 
+#content-bottom-left{
+	float:left;
+}
+
+#content-bottom-right{
+	float:right;
+}
+
 #logo-title img{
 	margin:10px;
 }
@@ -100,19 +108,21 @@ body {
 
 #sidebar-left h2, #sidebar-left a{
 	color:#fff;
+	font-size:0.9em;
 }
 
 #sidebar-left h2{
-	font-size:1.6em;
-	margin:0px 0px 3px 6px;
+	font-size:1.1em;
+	margin:0px 0px 0px 0px;
 }
 
 #sidebar-left { text-shadow: black 1px 1px; }
 
-body.sidebar-left #footer {
+body.sidebar-left #footer, #footer {
 	margin-left:0;
 	clear:both;
 }
+
 
 .block {
 	border-bottom:none;

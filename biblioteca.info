@@ -5,16 +5,18 @@ core        = 6.x
 version     = 6.x-0.1-dev
 engine = phptemplate
 
-stylesheets[all][]   = style.css
-stylesheets[all][]   = biblioteca.css
-stylesheets[print][] = print.css
+stylesheets[all][]   			= style.css
+stylesheets[all][]   			= biblioteca.css
+stylesheets[print][] 			= print.css
 
-regions[left]			= left
-regions[content_left]   = content bottom left
-regions[content_right]  = content bottom right
-regions[footer]         = footer
-regions[closure_region] = closure
+regions[left]					= left
+regions[content_top]   			= content top
+regions[content_bottom_left]   	= content bottom left
+regions[content_bottom_right]  	= content bottom right
+regions[footer]         		= footer
+regions[powered_by]         	= powered by
+regions[closure_region] 		= closure
 
-features[] = logo
-features[] = name
-features[] = favicon
+features[] 						= logo
+features[] 						= name
+features[] 						= favicon
